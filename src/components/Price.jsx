@@ -1,3 +1,5 @@
+import '../styles/Price.css'
+
 function Price() {
     return (
     <div className='price'>

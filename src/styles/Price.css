@@ -1,8 +1,13 @@
+.price {
+    margin-top: 20px;
+}
+
 .priceContainer {
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .priceReduction {
@@ -14,7 +19,7 @@
 
 #actualPrice {
     font-family: 'Kumbh Sans';
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     margin-right: 10%;
 }
@@ -25,7 +30,7 @@
     font-family: 'Kumbh Sans';
     color: hsl(26, 100%, 55%); 
     background-color: hsl(25, 100%, 94%);
-    width: 100%;
+    width: 25%;
     height: 50%;
     border-radius: 5px;
     padding: 3%;

@@ -4,19 +4,17 @@ import reportWebVitals from './reportWebVitals';
 import '../src/styles/reset.css';
 import '../src/styles/root.css';
 import Banner from './components/Banner';
-import "./styles/Banner.css";
 import Product from './components/Product';
-import "./styles/Product.css";
 import Price from './components/Price';
-import "./styles/Price.css";
 import Add from './components/Add';
-import "./styles/Add.css";
+import Description from './components/Description';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Banner />
     <Product />
+    <Description/>
     <Price />
     <Add />
   </React.StrictMode>
