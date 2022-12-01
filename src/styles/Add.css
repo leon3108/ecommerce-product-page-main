@@ -1,0 +1,27 @@
+.quantity
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.quantity img{
+    width: 15px;
+    height: 15px;
+}
+
+.cart
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    padding: 5%;
+    border-radius: 5px;
+}

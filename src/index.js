@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../src/styles/reset.css';
+import '../src/styles/root.css';
+import Banner from './components/Banner';
+import "./styles/Banner.css";
+import Product from './components/Product';
+import "./styles/Product.css";
+import Price from './components/Price';
+import "./styles/Price.css";
+import Add from './components/Add';
+import "./styles/Add.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Banner />
+    <Product />
+    <Price />
+    <Add />
   </React.StrictMode>
 );
 

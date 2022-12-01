@@ -1,0 +1,41 @@
+.priceContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceReduction {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+}
+
+#actualPrice {
+    font-family: 'Kumbh Sans';
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 10%;
+}
+
+#reduction {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Kumbh Sans';
+    color: hsl(26, 100%, 55%); 
+    background-color: hsl(25, 100%, 94%);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    padding: 3%;
+    padding-bottom: 10%;
+}
+
+#oldPrice {
+    font-family: 'Kumbh Sans';
+    color: hsl(220, 14%, 75%);
+    margin-top: 3.5%;
+    font-weight: 700;
+    text-decoration: line-through;
+}
