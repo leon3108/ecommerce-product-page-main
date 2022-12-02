@@ -1,15 +1,25 @@
 import cross from '../images/icon-close.svg'
 import { useContext } from 'react';
 import UserContext from './UserContext';
+import '../styles/Menu.css'
 
 function Menu() {
 	const { showMenu, setShowMenu } = useContext(UserContext);
 	return (
 		<>
-			<div id='tmp' style={{backgroundColor: 'black', height:100+'%', position:'absolute', zIndex:'1000', width:100+'%', opacity:'0.75'}}>okkkkk</div>
-			<div className='menu' style={{ width: 250 + 'px', height: 100 + '%', backgroundColor: 'white', position: 'absolute', zIndex: '1000' }}>
-				<img src={cross} alt="menu déroulant" id="iconMenu" style={{ marginLeft: 20 + 'px', marginTop: 20 + 'px' }} onClick={() => (setShowMenu(false))} />
-				<div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+			<div id='shadow'></div>
+			<div className='menu'>
+				<img src={cross} alt="menu déroulant" id="iconMenu"	onClick={() => (setShowMenu(false))}/>
+				<div style={{
+					marginLeft: 25+'px',
+					marginTop: 30+'px',
+					height: 25+'%',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'space-around',
+					fontFamily: 'var(--font-family)',
+					fontWeight: 'var(--font-weight-m)'
+					}}>
 					<p>Collections</p>
 					<p>Men</p>
 					<p>Women</p>
