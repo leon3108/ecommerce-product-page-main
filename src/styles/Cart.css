@@ -1,0 +1,10 @@
+#cart {
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 2.5%;
+    width: 95%;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+}

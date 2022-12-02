@@ -3,6 +3,7 @@ import plus from "../images/icon-plus.svg"
 import cart from "../images/icon-cart.svg"
 import { useState } from "react"
 import '../styles/Add.css'
+import '../styles/Global.css'
 
 function Add() {
     const [n, setN] = useState(0);
