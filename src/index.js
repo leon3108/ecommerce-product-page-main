@@ -3,20 +3,12 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import '../src/styles/reset.css';
 import '../src/styles/root.css';
-import Banner from './components/Banner';
-import Product from './components/Product';
-import Price from './components/Price';
-import Add from './components/Add';
-import Description from './components/Description';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Banner />
-    <Product />
-    <Description/>
-    <Price />
-    <Add />
+    <App />
   </React.StrictMode>
 );
 
