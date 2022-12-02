@@ -1,6 +1,9 @@
 import '../styles/Cart.css'
+import UserContext from './UserContext'
+import { useContext } from 'react'
 
 function Cart() {
+    const {itemsCart} = useContext(UserContext);
     return (
         <div id='cart'>
             <div style={{
@@ -22,12 +25,16 @@ function Cart() {
             justifyContent: 'center',
             alignItems: 'center'
             }}>
-                <p style={{
+                {itemsCart === 0 && <p style={{
                 fontFamily: 'var(--font-family)',
                 fontWeight: 'var(--font-weight-m)',
                 color: 'var(--dark-grayish-blue)'
                 }}>
-                Your cart is empty.</p>
+                Your cart is empty.</p>}
+                {itemsCart > 0 && <div>
+                    items 
+                    <button>Checkout</button>
+                    </div>}
             </div>
         </div>
     )

@@ -1,13 +1,11 @@
 #icon-previous {
-    background-color: white;
+    background-color: var(--white);
     width: 30px;
     height: 30px;
     border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 20px;
-
-    display: flex;
 }
 
 #svg {

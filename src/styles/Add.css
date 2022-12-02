@@ -4,9 +4,9 @@
     margin-right: 5%;
     display: flex;
     justify-content: space-between;
-    background-color: hsl(223, 64%, 98%);
+    background-color: var(--light-grayish-blue);
     padding: 5%;
-    border-radius: 5px;
+    border-radius: var(--border-radius-s);
 }
 
 .quantity img{
@@ -14,8 +14,7 @@
     height: 15px;
 }
 
-h3 {
-    font-family: var(--font-family);
+#quantityText {
     font-weight: var(--font-weight-m);
 }
 
@@ -26,9 +25,15 @@ h3 {
     margin-right: 5%;
     display: flex;
     justify-content: center;
-    /* background-color: hsl(26, 100%, 55%); */
     background-color: var(--main-color);
-    color: white;
+    color: var(--white);
     padding: 5%;
-    border-radius: 10px;
+    width: 90%;
+    border-radius: var(--border-radius-m);
+    border: var(--main-color) solid;
+}
+
+.cart p {
+    font-size: 16px;
+    font-weight: var(--font-weight-m);
 }

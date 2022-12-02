@@ -12,8 +12,20 @@ html {
     --font-family: 'Kumbh Sans';
     --font-weight-s: 400;
     --font-weight-m: 700;
+
+    --border-radius-s: 5px;
+    --border-radius-m: 10px;
 }
 
-.p {
+p {
     --font-size: 16px;
+    font-family: var(--font-family);
+}
+
+button{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-m);
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: var(--border-radius-m);
 }

@@ -1,20 +1,22 @@
 import minus from "../images/icon-minus.svg"
 import plus from "../images/icon-plus.svg"
 import cart from "../images/icon-cart.svg"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import '../styles/Add.css'
 import '../styles/Global.css'
+import UserContext from "./UserContext"
 
 function Add() {
-    const [n, setN] = useState(0);
+    const [quantity, setQuantity] = useState(0);
+    const {itemsCart, setItemCart} = useContext(UserContext);
     return (
         <div>
             <div className="quantity">
-                <img src={minus} alt="img minus" onClick={() => {if (n -1 >= 0){setN(n - 1)}}}/>
-                <h3>{n}</h3>
-                <img src={plus} alt="img plus" onClick={() => setN(n + 1)}/>
+                <img src={minus} alt="img minus" onClick={() => {if (quantity -1 >= 0){setQuantity(quantity - 1)}}}/>
+                <p id="quantityText">{quantity}</p>
+                <img src={plus} alt="img plus" onClick={() => setQuantity(quantity + 1)}/>
             </div>
-            <div className="cart">
+            <button className="cart" onClick={() => (setItemCart(quantity))}>
                 {/* <svg 
                     // width="22"
                     // height="20" 
@@ -27,8 +29,8 @@ function Add() {
                 />
                 </svg> */}
                 <img src={cart} alt="img cart"/>
-                <h3>Add to cart</h3>
-            </div>
+                <p>Add to cart</p>
+            </button>
         </div>
     );
 }

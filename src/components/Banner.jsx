@@ -9,7 +9,7 @@ import UserContext from './UserContext';
 
 function Banner() {
   const [showCart, setShowCart] = useState(false);
-  const {showMenu, setShowMenu} = useContext(UserContext);
+  const {showMenu, setShowMenu, itemsCart, setItemCart} = useContext(UserContext);
   return (
     <>
       {showMenu && <Menu />}
@@ -17,6 +17,7 @@ function Banner() {
         <div className="banner">
           <img src={iconMenu} alt="menu déroulant" id="iconMenu" onClick={() => (setShowMenu(true))} />
           <h1 id="name">sneakers</h1>
+          {itemsCart}
           <img src={iconCart} alt="afficher son panier" id="iconCart" onClick={() => { setShowCart(!showCart) }} />
           <img src={Avatar} alt="son avatar" id="avatar" />
         </div>

@@ -8,10 +8,10 @@ import UserContext from './components/UserContext';
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
-
+  const [itemsCart, setItemCart] = useState(0);
 
   return (
-    <UserContext.Provider value={{showMenu, setShowMenu}}>
+    <UserContext.Provider value={{showMenu, setShowMenu, itemsCart, setItemCart}}>
       <Banner />
       <Product />
       <Description/>

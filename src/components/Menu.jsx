@@ -9,7 +9,7 @@ function Menu() {
 		<>
 			<div id='shadow'></div>
 			<div className='menu'>
-				<img src={cross} alt="menu déroulant" id="iconMenu"	onClick={() => (setShowMenu(false))}/>
+				<img src={cross} alt="menu déroulant" id="cross"	onClick={() => (setShowMenu(false))}/>
 				<div style={{
 					marginLeft: 25+'px',
 					marginTop: 30+'px',
@@ -20,11 +20,11 @@ function Menu() {
 					fontFamily: 'var(--font-family)',
 					fontWeight: 'var(--font-weight-m)'
 					}}>
-					<p>Collections</p>
-					<p>Men</p>
-					<p>Women</p>
-					<p>About</p>
-					<p>Contact</p>
+					<p className='section'>Collections</p>
+					<p className='section'>Men</p>
+					<p className='section'>Women</p>
+					<p className='section'>About</p>
+					<p className='section'>Contact</p>
 				</div>
 			</div>
 		</>
