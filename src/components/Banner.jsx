@@ -19,7 +19,7 @@ function Banner() {
           <h1 id="name">sneakers</h1>
           <div style={{display: 'flex', position: 'relative'}}>
             <img src={iconCart} alt="afficher son panier" id="iconCart" onClick={() => { setShowCart(!showCart) }} />
-            <div id="itemsInCart">{itemsCart}</div>
+            {itemsCart > 0 && <div id="itemsInCart">{itemsCart}</div>}
           </div>
           <img src={Avatar} alt="son avatar" id="avatar" />
         </div>
