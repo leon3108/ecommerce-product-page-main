@@ -1,6 +1,7 @@
 import '../styles/Cart.css'
 import UserContext from './UserContext'
 import { useContext } from 'react'
+import thumbnail from "../images/image-product-1-thumbnail.jpg";
 
 function Cart() {
     const {itemsCart} = useContext(UserContext);
@@ -14,7 +15,6 @@ function Cart() {
             }}>
                 <p style={{
                 marginLeft:20 +'px',
-                fontFamily: 'var(--font-family)',
                 fontWeight: 'var(--font-weight-m)',
                 }}>
                 Cart</p>
@@ -26,13 +26,13 @@ function Cart() {
             alignItems: 'center'
             }}>
                 {itemsCart === 0 && <p style={{
-                fontFamily: 'var(--font-family)',
                 fontWeight: 'var(--font-weight-m)',
                 color: 'var(--dark-grayish-blue)'
                 }}>
                 Your cart is empty.</p>}
                 {itemsCart > 0 && <div>
-                    items 
+                    items
+                    <img src={thumbnail} alt="thumbnail product"/>
                     <button>Checkout</button>
                     </div>}
             </div>
