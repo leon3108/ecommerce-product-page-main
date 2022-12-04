@@ -9,7 +9,7 @@ import UserContext from './UserContext';
 
 function Banner() {
   const [showCart, setShowCart] = useState(false);
-  const {showMenu, setShowMenu, itemsCart, setItemCart} = useContext(UserContext);
+  const {showMenu, setShowMenu, itemsCart} = useContext(UserContext);
   return (
     <>
       {showMenu && <Menu />}
