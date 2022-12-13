@@ -29,7 +29,6 @@ function Cart() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // justifyContent: 'space-between'
         }}>
           {itemsCart === 0 && <p style={{
             fontWeight: 'var(--font-weight-m)',
