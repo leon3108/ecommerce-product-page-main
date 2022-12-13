@@ -8,7 +8,7 @@ import UserContext from "./UserContext"
 
 function Add() {
     const [quantity, setQuantity] = useState(0);
-    const {itemsCart, setItemCart} = useContext(UserContext);
+    const {setItemCart} = useContext(UserContext);
     return (
         <div>
             <div className="quantity">

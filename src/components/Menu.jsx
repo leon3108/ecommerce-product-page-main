@@ -4,7 +4,7 @@ import UserContext from './UserContext';
 import '../styles/Menu.css'
 
 function Menu() {
-	const { showMenu, setShowMenu } = useContext(UserContext);
+	const { setShowMenu } = useContext(UserContext);
 	return (
 		<>
 			<div id='shadow'></div>

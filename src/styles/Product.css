@@ -1,19 +1,23 @@
 .product {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #imageproduct {
     width: 100vh;
     height: 300px;
+    display: flex;
 }
 
-#icon-next {
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
     position: absolute;
-    top: 50%;
-    right: 20px;
-    z-index: 10;
 }

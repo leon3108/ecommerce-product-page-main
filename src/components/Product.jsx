@@ -2,12 +2,9 @@ import product1 from '../images/image-product-1.jpg';
 import product2 from '../images/image-product-2.jpg';
 import product3 from '../images/image-product-3.jpg';
 import product4 from '../images/image-product-4.jpg';
-import previous from "../images/icon-previous.svg";
-import IconPrevious from "./Icon_previous";
+import {ReactComponent as IconPrevious} from '../images/icon-previous.svg';
+import {ReactComponent as IconNext} from '../images/icon-next.svg';
 import '../styles/Product.css'
-
-
-import next from "../images/icon-next.svg";
 import { useState } from 'react';
 
 function Product() {
@@ -26,12 +23,13 @@ function Product() {
 
     return (
     <div className='product'>
-        <div className='divProduct' >
             <img id="imageproduct" src={products[productIndex]} alt="produit"/>
-            <img id="icon-previous" src={previous} alt="previous icon" onClick={() => (changeimage(-1))}/>
-            {/* <IconPrevious/> */}
-            <img id="icon-next" src={next} alt="next icon" onClick={() => (changeimage(+1))}/>
-        </div>
+            <div className="icon" style={{left:10}} onClick={() => (changeimage(-1))}>
+                <IconPrevious style={{scale: 80+'%'}}/>
+            </div>
+            <div className="icon" style={{right:10}} onClick={() => (changeimage(+1))}>
+                <IconNext style={{scale: 80+'%'}}/>
+            </div>
     </div>
     )
 }
