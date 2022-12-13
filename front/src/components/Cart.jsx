@@ -25,7 +25,7 @@ function Cart() {
 
 
       <div style={{
-        height: (120 + 'px'),
+        height: (100 + 'px'),
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -40,7 +40,8 @@ function Cart() {
           {itemsCart > 0 && <div style={{display: 'flex', alignItems:'center', justifyContent:'space-between', width:300+'px'}}>
             <img src={thumbnail} alt="thumbnail product" style={{width: 50+"px", borderRadius:5+'px'}}/>
             <div style={{display:'flex', flexDirection:'column'}}>
-              <p className='cartDescription'>Autummn Limited Edition...</p>
+              {/* <p className='cartDescription'>Autummn Limited Edition...</p> */}
+              <p className='cartDescription'>Fall Limited Edition Sneakers</p>
               <p className='cartDescription'>$125.00 x {itemsCart} <strong style={{color:'var(--black)'}}>${itemsCart * 125.00}</strong></p>
             </div>
             <img src={trash} alt='trashIcon' onClick={() => (setItemCart(0))}/>
@@ -49,7 +50,7 @@ function Cart() {
         </div>
 
 
-      {itemsCart > 0 &&<button style={{width:90+"%", height:50+"px", marginLeft:5+"%", border: 'var(--main-color) solid'}}>Checkout</button>}
+      {itemsCart > 0 &&<button style={{width:90+"%", height:60+"px", marginLeft:5+"%", border: 'var(--main-color) solid'}}>Checkout</button>}
 
     </div>
   )
